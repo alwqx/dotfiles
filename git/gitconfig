@@ -1,0 +1,19 @@
+[user]
+    name = adolphlwq
+    email = kenan3015@gmail.com
+[merge]
+    tool = vimdiff
+    log = true
+[alias]
+    st = status
+    co = checkout
+    lg = logs
+    br = branch
+    ci = commit
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[core]
+    editor = vim
