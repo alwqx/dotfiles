@@ -12,6 +12,7 @@ submodule:
 	git submodule update --init
 
 vim: submodule
+	cat $(CURDIR)/vim/adolphlwq.vim > $(CURDIR)/vim/vim-config/my-config.vim
 	ln $(LNOPT) $(CURDIR)/vim/vim-config ~/.vim_runtime
 	sh $(CURDIR)/vim/vim-config/install_awesome_vimrc.sh
 
