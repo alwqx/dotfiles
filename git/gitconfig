@@ -7,7 +7,7 @@
 [alias]
     st = status
     co = checkout
-    lg = logs
+    lg = log
     br = branch
     ci = commit
 [color]
