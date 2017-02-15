@@ -21,3 +21,6 @@ zsh: submodule
 
 git: 
 	ln $(LNOPT) $(CURDIR)/git/gitconfig ~/.gitconfig
+
+vscode:
+	ln $(LNOPT) $(CURDIR)/vscode/config/settings.json ~/.config/Code/User/settings.json

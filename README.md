@@ -25,7 +25,10 @@ make zsh
 ```
 make git
 ```
-
+- vscode
+```
+make vscode
+```
 
 ## Reference
 - [git submodule](http://blog.csdn.net/wangjia55/article/details/24400501)

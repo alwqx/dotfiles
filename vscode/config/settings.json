@@ -1,0 +1,16 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "go.goroot": "/usr/local/golang/versions/go1.7.4/go",
+    "go.gopath": "/home/geek/workspace/gowp",
+    "editor.fontSize": 18,
+    "sync.gist": "",
+    "sync.lastUpload": null,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": null,
+    "sync.version": 243,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.workspaceSync": false,
+    "sync.anonymousGist": false
+}
