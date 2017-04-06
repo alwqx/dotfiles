@@ -18,6 +18,7 @@ vim: submodule
 
 zsh: submodule
 	ln $(LNOPT) $(CURDIR)/zsh/oh-my-zsh ~/.oh-my-zsh
+	ln $(LNOPT) $(CURDIR)/zsh/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 git: 
 	ln $(LNOPT) $(CURDIR)/git/gitconfig ~/.gitconfig
