@@ -25,3 +25,11 @@ git:
 
 vscode:
 	ln $(LNOPT) $(CURDIR)/vscode/config/settings.json ~/.config/Code/User/settings.json
+
+chrome:
+	echo "config chrome for hiDPI"
+	ln $(LNOPT) $(CURDIR)/chromeq/chrome-flags.conf ~/.config/chrome-flags.conf
+	
+chromium:
+	echo "config chromium for hiDPI"
+	ln $(LNOPT) $(CURDIR)/chromiumq/chromium-flags.conf ~/.config/chroium-flags.conf
