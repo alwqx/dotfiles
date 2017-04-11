@@ -17,3 +17,5 @@
     branch = auto
 [core]
     editor = vim
+[http]
+    postBuffer = 524288000
