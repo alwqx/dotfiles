@@ -1,4 +1,4 @@
-.PHONY: vim zsh git
+.PHONY: vim zsh git chrome chromium
 
 CURDIR=$(shell pwd)
 LNOPT=-fs
@@ -18,7 +18,7 @@ vim: submodule
 
 zsh: submodule
 	ln $(LNOPT) $(CURDIR)/zsh/oh-my-zsh ~/.oh-my-zsh
-	ln $(LNOPT) $(CURDIR)/zsh/oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+	ln $(LNOPT) $(CURDIR)/zsh/zshrc ~/.zshrc
 
 git: 
 	ln $(LNOPT) $(CURDIR)/git/gitconfig ~/.gitconfig
