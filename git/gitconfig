@@ -10,6 +10,8 @@
     lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     br = branch
     ci = commit
+    p = push
+    clean = branch --merged | grep -v '*' | xargs git branch -d
 [color]
     ui = auto
     diff = auto
