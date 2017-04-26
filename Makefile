@@ -28,8 +28,8 @@ vscode:
 
 chrome:
 	echo "config chrome for hiDPI"
-	ln $(LNOPT) $(CURDIR)/chromeq/chrome-flags.conf ~/.config/chrome-flags.conf
+	ln $(LNOPT) $(CURDIR)/chrome/chrome-flags.conf ~/.config/chrome-flags.conf
 	
 chromium:
 	echo "config chromium for hiDPI"
-	ln $(LNOPT) $(CURDIR)/chromiumq/chromium-flags.conf ~/.config/chroium-flags.conf
+	ln $(LNOPT) $(CURDIR)/chromium/chromium-flags.conf ~/.config/chroium-flags.conf
