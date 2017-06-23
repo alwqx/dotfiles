@@ -32,4 +32,4 @@ chrome:
 	
 chromium:
 	echo "config chromium for hiDPI"
-	ln $(LNOPT) $(CURDIR)/chromium/chromium-flags.conf ~/.config/chroium-flags.conf
+	ln $(LNOPT) $(CURDIR)/chromium/chromium-flags.conf ~/.config/chromium-flags.conf
