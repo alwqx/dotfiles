@@ -7,7 +7,8 @@
 [alias]
     st = status
     co = checkout
-    lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lg = log
+    lpg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     br = branch
     ci = commit
     p = push
@@ -19,7 +20,8 @@
     branch = auto
 [core]
     editor = vim
+	compression = 0
 [http]
-    postBuffer = 524288000
+	postBuffer = 524288000
 [gpg]
 	program = gpg2
