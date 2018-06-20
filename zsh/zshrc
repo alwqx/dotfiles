@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -86,3 +86,9 @@ source $ZSH/oh-my-zsh.sh
 
 # alias autojump
 alias aj="autojump"
+alias gv="govendor"
+alias ddc="docker-compose"
+export GOPATH=/Users/luwenquan/workspace/gowp
+export GOROOT=/usr/local/go/go1.9.0
+export DOTFILES_HOME=/Users/luwenquan/workspace/githubwp/scripts
+export PATH=$DOTFILES_HOME/bin:$GOPATH/bin:$GOROOT/bin:$PATH

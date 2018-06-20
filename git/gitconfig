@@ -21,7 +21,18 @@
 [core]
     editor = vim
 	compression = 0
+	excludesfile = /Users/luwenquan/.gitignore_global
 [http]
-	postBuffer = 524288000
+	postBuffer = 1048576000
+	buffer = 524288000
+	cloneBuffer = 524288000
 [gpg]
 	program = gpg2
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[url "git@bitbucket.org:"]
+	insteadOf = https://bitbucket.org/
