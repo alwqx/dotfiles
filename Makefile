@@ -33,3 +33,7 @@ chrome:
 chromium:
 	echo "config chromium for hiDPI"
 	ln $(LNOPT) $(CURDIR)/chromium/chromium-flags.conf ~/.config/chromium-flags.conf
+
+lg:
+	echo "config libinput gestures for chromium"
+	ln $(LNOPT) $(CURDIR)/gestures/libinput-gestures.conf ~/.config/libinput-gestures.conf

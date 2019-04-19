@@ -30,6 +30,11 @@ make git
 make vscode
 ```
 
+- libinput gestures
+```
+make lg
+```
+
 ## Reference
 - [git submodule](http://blog.csdn.net/wangjia55/article/details/24400501)
 - [hit9/dotfiles](https://github.com/hit9/dotfiles)
