@@ -20,6 +20,9 @@ zsh: submodule
 	ln $(LNOPT) $(CURDIR)/zsh/oh-my-zsh ~/.oh-my-zsh
 	ln $(LNOPT) $(CURDIR)/zsh/zshrc ~/.zshrc
 
+bash:
+	ln $(LNOPT) $(CURDIR)/zsh/zshrc ~/.bashrc
+
 git: 
 	ln $(LNOPT) $(CURDIR)/git/gitconfig ~/.gitconfig
 

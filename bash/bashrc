@@ -1,0 +1,22 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# alias autojump
+alias gv="govendor"
+alias ddc="docker-compose"
+alias v="vagrant"
+export SYSTEMD_EDITOR=vim
+export EDITOR=/usr/bin/vim
+export GOPATH=~/workspace/gowp
+export GOROOT=/usr/local/golang/versions/go1.12.2/go
+export DOTFILES_HOME=~/workspace/githubwp/scripts
+export PATH=$DOTFILES_HOME/bin:$GOPATH/bin:$GOROOT/bin:$GEM_HOME/bin:$PATH
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
