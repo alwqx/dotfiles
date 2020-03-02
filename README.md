@@ -4,36 +4,46 @@ A tool for configing vim,zsh,etc
 
 ## Usage
 - clone repo
-```
-git clone https://github.com/adolph/dotfiles
-```
+    ```
+    git clone https://github.com/adolph/dotfiles
+    ```
+
 - update submodules
-```
-git submodules update --init
-OR
-make submodules
-```
+    ```
+    git submodules update --init
+    OR
+    make submodules
+    ```
+
 - vim
-```
-make vim
-```
+    ```
+    make vim
+    ```
+
 - zsh
-```
-make zsh
-```
+    ```
+    make zsh
+    ```
+
 - git
-```
-make git
-```
+    ```
+    make git
+    ```
+
 - vscode
-```
-make vscode
-```
+    ```
+    make vscode
+    ```
 
 - libinput gestures
-```
-make lg
-```
+    ```
+    make lg
+    ```
+
+- redshift
+    ```
+    make redshift
+    ```
 
 ## Reference
 - [git submodule](http://blog.csdn.net/wangjia55/article/details/24400501)
