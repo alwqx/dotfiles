@@ -43,4 +43,4 @@ lg:
 
 redshift:
 	@echo "redshift config location is Shanghai(lat=31.23 lon=121.47) you can config it"
-	ln $(LNOPT) $(CURDIR)/redshift/redshiftc.onf ~/.config/redshift/redshift.conf
+	ln $(LNOPT) $(CURDIR)/redshift/redshift.conf ~/.config/redshift/redshift.conf
