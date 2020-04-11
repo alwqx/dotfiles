@@ -12,6 +12,7 @@
     br = branch
     ci = commit
     p = push
+    smod = submodule
     clean = branch --merged | grep -v '*' | xargs git branch -d
 [color]
     ui = auto
@@ -22,11 +23,12 @@
     editor = vim
 	compression = 0
 	excludesfile = ~/.gitignore_global
+	quotepath = false
 [http]
 	postBuffer = 10485760
 	buffer = 5242880
 	cloneBuffer = 5242880
-	proxy = socks5://127.0.0.1:1082
+	proxy = http://127.0.0.1:1082
 [gpg]
 	program = gpg2
 [difftool "sourcetree"]
@@ -38,7 +40,7 @@
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
 [https]
-    proxy = socks5://127.0.0.1:1082
+    proxy = http://127.0.0.1:1082
 	postBuffer = 10485760
 	buffer = 5242880
 	cloneBuffer = 5242880
