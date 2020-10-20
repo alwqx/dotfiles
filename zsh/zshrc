@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump)
+plugins=(git autojump zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,17 +84,28 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# for git proxy
+export http_proxy=http://127.0.0.1:1082
+export https_proxy=http://127.0.0.1:1082
+# for npm proxy
+export HTTP_PROXY=127.0.0.1:1082
+export HTTPS_PROXY=127.0.0.1:1082
+export GOPROXY=http://goproxy.bilibili.co
+
 # alias autojump
 alias aj="autojump"
 alias gv="govendor"
 alias ddc="docker-compose"
 alias v="vagrant"
+# refer https://forum.qt.io/topic/111553/solved-qt-qpa-plugin-could-not-find-the-qt-platform-plugin-xcb-in/15
+export QT_PLUGIN_PATH=/usr/lib/qt/plugins
 export SYSTEMD_EDITOR=vim
 export EDITOR=/usr/bin/vim
 export GEM_HOME=/home/geek/.gem/ruby/2.7.0
 export GOPATH=~/workspace/gowp
-export GOROOT=/usr/local/golang/versions/go1.12.2/go
+export GOROOT=/usr/local/golang/versions/go1.14.6/go
 export DOTFILES_HOME=~/workspace/githubwp/scripts
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH=$DOTFILES_HOME/bin:$GOPATH/bin:$GOROOT/bin:$GEM_HOME/bin:$PATH
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
