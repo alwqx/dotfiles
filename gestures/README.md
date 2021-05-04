@@ -35,7 +35,7 @@ libinput有两种配置方式：
 - 使用xinput命令行工具，针对运行时(runtime)进行实时配置，主要用来调试。
 
 #### 配置文件
-libinput安装后默认的配置文件在`/usr/share/X11/xorg.conf.d`目录下，如何你安装多个驱动，会存在多个文件：
+libinput安装后默认的配置文件在`/usr/share/X11/xorg.conf.d`目录下，如果你安装多个驱动，会存在多个文件：
 ```shell
 ➜  xorg.conf.d ll
 total 12K
@@ -179,10 +179,14 @@ gesture swipe left 3   xdotool key alt+Right
 ### 网页的前进/后退（对标macbook）
 `$HOME/.config/libinput-gestures.conf`中添加如下内容
 ```vim
-# pinch 
+# pinch
 gesture pinch in 2 xdotool key ctrl+minus # 2指捏: 缩小
 gesture pinch out 2 xdotool key ctrl+plus # 2指张: 放大
 ```
+
+## TroubleShotting
+### ArchLinux系统升级后touchpad滚动方向反置
+这个貌似不是libinput驱动的配置问题，要在系统配置的`touchpad`项中改变滚动方向，然后登出系统就可以了。
 
 ## 总结
 本文从想法到配置好前前后后花了大约1个月时间，大部分时间用在了理解输入驱动、配置驱动以及配置调试toucgegg和libinput-gestures上了。
