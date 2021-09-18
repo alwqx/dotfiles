@@ -184,9 +184,29 @@ gesture pinch in 2 xdotool key ctrl+minus # 2指捏: 缩小
 gesture pinch out 2 xdotool key ctrl+plus # 2指张: 放大
 ```
 
-## TroubleShotting
+## TroubleShooting
 ### ArchLinux系统升级后touchpad滚动方向反置
 这个貌似不是libinput驱动的配置问题，要在系统配置的`touchpad`项中改变滚动方向，然后登出系统就可以了。
+
+上面的方案不是每次都有效的，可能是archlinux滚动升级出现的bug吧，修改滚动方向后发现没有生效。可以使用**xinput**来辅助调试。
+```shell
+➜  dotfiles git:(master) ✗ xinput watch-props "Synaptics TM3289-002"
+// 做了一些修改配置的操作
+Property 'libinput Accel Speed' changed.
+        libinput Accel Speed (341):     0.330000
+Property 'libinput Accel Speed' changed.
+        libinput Accel Speed (341):     0.320000
+Property 'libinput Accel Speed' changed.
+        libinput Accel Speed (341):     0.320000
+Property 'libinput Horizontal Scroll Enabled' changed.
+        libinput Horizontal Scroll Enabled (349):       0
+Property 'libinput Natural Scrolling Enabled' changed.
+        libinput Natural Scrolling Enabled (329):       1
+Property 'libinput Accel Speed' changed.
+        libinput Accel Speed (341):     0.330000
+Property 'libinput Horizontal Scroll Enabled' changed.
+        libinput Horizontal Scroll Enabled (349):       1
+```
 
 ## 总结
 本文从想法到配置好前前后后花了大约1个月时间，大部分时间用在了理解输入驱动、配置驱动以及配置调试toucgegg和libinput-gestures上了。
