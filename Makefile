@@ -10,6 +10,8 @@ LNOPT=-fs
 
 submodule:
 	git submodule update --init
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting zsh/oh-my-zsh/plugins
+	git clone https://github.com/zsh-users/zsh-autosuggestions zsh/oh-my-zsh/plugins
 
 vim: submodule
 	cat $(CURDIR)/vim/adolphlwq.vim > $(CURDIR)/vim/vim-config/my_configs.vim

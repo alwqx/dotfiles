@@ -51,7 +51,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump zsh-autosuggestions)
+plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +99,9 @@ alias aj="autojump"
 alias gv="govendor"
 alias ddc="docker-compose"
 alias v="vagrant"
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
+export BREW_HOME=/opt/homebrew
 # refer https://forum.qt.io/topic/111553/solved-qt-qpa-plugin-could-not-find-the-qt-platform-plugin-xcb-in/15
 export QT_PLUGIN_PATH=/usr/lib/qt/plugins
 export SYSTEMD_EDITOR=vim
@@ -108,6 +111,6 @@ export GOPATH=~/workspace/gowp
 export GOROOT=/usr/local/golang/versions/go1.14.6/go
 export DOTFILES_HOME=~/workspace/githubwp/scripts
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
-export PATH=$DOTFILES_HOME/bin:$GOPATH/bin:$GOROOT/bin:$GEM_HOME/bin:$PATH
+export PATH=$DOTFILES_HOME/bin:$BREW_HOME/bin:$GOPATH/bin:$GOROOT/bin:$GEM_HOME/bin:$PATH
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
