@@ -10,8 +10,8 @@ LNOPT=-fs
 
 submodule:
 	git submodule update --init
-	git clone https://github.com/zsh-users/zsh-syntax-highlighting zsh/oh-my-zsh/plugins
-	git clone https://github.com/zsh-users/zsh-autosuggestions zsh/oh-my-zsh/plugins
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting zsh/oh-my-zsh/plugins/zsh-syntax-highlighting
+	git clone https://github.com/zsh-users/zsh-autosuggestions zsh/oh-my-zsh/plugins/zsh-autosuggestions
 
 vim: submodule
 	cat $(CURDIR)/vim/adolphlwq.vim > $(CURDIR)/vim/vim-config/my_configs.vim
@@ -25,7 +25,7 @@ zsh: submodule
 bash:
 	ln $(LNOPT) $(CURDIR)/zsh/zshrc ~/.bashrc
 
-git: 
+git:
 	ln $(LNOPT) $(CURDIR)/git/gitconfig ~/.gitconfig
 
 vscode:
@@ -34,7 +34,7 @@ vscode:
 chrome:
 	echo "config chrome for hiDPI"
 	ln $(LNOPT) $(CURDIR)/chrome/chrome-flags.conf ~/.config/chrome-flags.conf
-	
+
 chromium:
 	echo "config chromium for hiDPI"
 	ln $(LNOPT) $(CURDIR)/chromium/chromium-flags.conf ~/.config/chromium-flags.conf
