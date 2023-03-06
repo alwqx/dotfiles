@@ -45,6 +45,10 @@ A tool for configing vim,zsh,etc
     make redshift
     ```
 
+## zsh 启动慢优化
+1. 检查慢的原因  https://zhuanlan.zhihu.com/p/68303393
+2. 分析与优化措施 https://cloud.tencent.com/developer/article/1678315
+
 ## Reference
 - [git submodule](http://blog.csdn.net/wangjia55/article/details/24400501)
 - [hit9/dotfiles](https://github.com/hit9/dotfiles)
