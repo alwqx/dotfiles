@@ -1,0 +1,9 @@
+patch:
+  app_setting:
+    theme_name: "九宫格" #当前主题
+    play_key_voice_volume: 0.135085
+    play_key_voice: false #开启键盘声
+    impact_feedback: false #键盘震动反馈。这里只支持IOS10以上的系统，且只支持Taptic Engine技术的机型。
+
+style:
+  numberboard_font_size: 26.0 #数字键盘字体大小
