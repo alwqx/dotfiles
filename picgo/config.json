@@ -1,0 +1,13 @@
+{
+    "picBed": {
+        "uploader": "github",
+        "github": {
+            "repo": "alwqx/osshub",
+            "token": "your_token",
+            "path": "img",
+            "customUrl": "",
+            "branch": "master"
+        }
+    },
+    "picgoPlugins": {}
+}
