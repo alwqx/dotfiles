@@ -17,7 +17,7 @@ ZSH_THEME="ys"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -51,7 +51,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-nvm autojump zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,20 +85,24 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # for git proxy
-#export http_proxy=http://127.0.0.1:1082
+#export http_proxy=http:/127.0.0.1:1082
 #export https_proxy=http://127.0.0.1:1082
 
 # for npm proxy and minikube
-export HTTP_PROXY=127.0.0.1:1082
-export HTTPS_PROXY=127.0.0.1:1082
+#export HTTP_PROXY=192.168.199.216:1082
+#export HTTPS_PROXY=192.168.199.216:1082
 #export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24
-#export GOPROXY=http://goproxy.bilibili.co
+
+# brew mirror
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
 
 # alias autojump
 alias aj="autojump"
-alias gv="govendor"
-alias ddc="docker-compose"
-alias v="vagrant"
+
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export BREW_HOME=/opt/homebrew
@@ -107,10 +111,36 @@ export QT_PLUGIN_PATH=/usr/lib/qt/plugins
 export SYSTEMD_EDITOR=vim
 export EDITOR=/usr/bin/vim
 export GEM_HOME=/home/geek/.gem/ruby/2.7.0
-export GOPATH=~/workspace/gowp
-export GOROOT=/usr/local/golang/versions/go1.14.6/go
+export PYENV_HOME=/Users/geek/.pyenv
 export DOTFILES_HOME=~/workspace/githubwp/scripts
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
-export PATH=$DOTFILES_HOME/bin:$BREW_HOME/bin:$GOPATH/bin:$GOROOT/bin:$GEM_HOME/bin:$PATH
+export BOOKY_HOME=~/workspace/githubwp/booky
+export PATH=$BOOKY_HOME:$PYENV_ROOT/bin:$DOTFILES_HOME/bin:$BREW_HOME/bin:$GEM_HOME/bin:$PATH
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export GOROOT=/usr/local/golang/versions/go1.20.3/go
+#source ~/.zshrc_person
+source ~/.zshrc_bili
+
+# for bilibili
+#export GOPROXY=http://goproxy.bilibili.co
+#export GOPATH=~/workspace/gowp
+#export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# for no bilibili
+#export GOPROXY=https://goproxy.cn
+#export GOPATH=~/workspace/personalgowp
+#export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/geek/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# zsh-nvm lazy load
+export NVM_LAZY_LOAD=true
+# for bvchub_web
+# refer https://www.newline.co/@kchan/how-to-fix-the-error-errorerror0308010cdigital-envelope-routinesunsupported--0f8d3f17
+#export NODE_OPTIONS=--openssl-legacy-provider
