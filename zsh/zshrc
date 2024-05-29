@@ -112,13 +112,12 @@ export SYSTEMD_EDITOR=vim
 export EDITOR=/usr/bin/vim
 export GEM_HOME=/home/geek/.gem/ruby/2.7.0
 export PYENV_HOME=/Users/geek/.pyenv
-export DOTFILES_HOME=~/workspace/githubwp/scripts
+export SCRIPT_HOME=~/workspace/githubwp/scripts
 export BOOKY_HOME=~/workspace/githubwp/booky
-export PATH=$BOOKY_HOME:$PYENV_ROOT/bin:$DOTFILES_HOME/bin:$BREW_HOME/bin:$GEM_HOME/bin:$PATH
+export PATH=$BOOKY_HOME:$PYENV_HOME/shims:$SCRIPT_HOME/bin:$SCRIPT_HOME/docker:$BREW_HOME/bin:$GEM_HOME/bin:$PATH
 
-export GOROOT=/usr/local/golang/versions/go1.20.3/go
-#source ~/.zshrc_person
-source ~/.zshrc_bili
+source ~/.zshrc_person
+#source ~/.zshrc_bili
 
 # for bilibili
 #export GOPROXY=http://goproxy.bilibili.co
