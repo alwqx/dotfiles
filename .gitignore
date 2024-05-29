@@ -1,2 +1,4 @@
 vim/vim-config
 my_configs.vim
+zsh/ohmyzsh-repo/plugins/zsh-autosuggestions
+zsh/ohmyzsh-repo/plugins/zsh-syntax-highlighting

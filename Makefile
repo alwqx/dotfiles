@@ -10,13 +10,16 @@ LNOPT=-fs
 
 submodule:
 	git submodule update --init
-	git clone https://github.com/zsh-users/zsh-syntax-highlighting zsh/ohmyzsh-repo/plugins/zsh-syntax-highlighting
-	git clone https://github.com/zsh-users/zsh-autosuggestions zsh/ohmyzsh-repo/plugins/zsh-autosuggestions
 
 vim:
 	cat $(CURDIR)/vim/adolphlwq.vim > $(CURDIR)/vim/vim-config/my_configs.vim
 	ln $(LNOPT) $(CURDIR)/vim/vim-config ~/.vim_runtime
 	sh $(CURDIR)/vim/vim-config/install_awesome_vimrc.sh
+
+zshinit:
+	git clone https://github.com/ohmyzsh/ohmyzsh.git zsh/ohmyzsh-repo
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting zsh/ohmyzsh-repo/plugins/zsh-syntax-highlighting
+	git clone https://github.com/zsh-users/zsh-autosuggestions zsh/ohmyzsh-repo/plugins/zsh-autosuggestions
 
 zsh:
 	ln $(LNOPT) $(CURDIR)/zsh/ohmyzsh-repo ~/.oh-my-zsh
