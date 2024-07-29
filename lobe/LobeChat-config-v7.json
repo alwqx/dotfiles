@@ -1,0 +1,360 @@
+{
+    "exportType": "all",
+    "state": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "hello",
+                "files": [],
+                "sessionId": "inbox",
+                "topicId": "vAO04Zhz",
+                "createdAt": 1722228073788,
+                "id": "gJhqT7rp",
+                "updatedAt": 1722228073788,
+                "extra": {},
+                "meta": {}
+            },
+            {
+                "role": "assistant",
+                "content": "Hello! How can I assist you today?",
+                "parentId": "gJhqT7rp",
+                "sessionId": "inbox",
+                "topicId": "vAO04Zhz",
+                "createdAt": 1722228084873,
+                "id": "KBwdI8Dz",
+                "updatedAt": 1722228091983,
+                "extra": {
+                    "fromModel": "llama3.1:8b",
+                    "fromProvider": "ollama"
+                },
+                "meta": {}
+            }
+        ],
+        "sessionGroups": [],
+        "sessions": [],
+        "settings": {
+            "defaultAgent": {
+                "config": {
+                    "chatConfig": {
+                        "autoCreateTopicThreshold": 2,
+                        "displayMode": "chat",
+                        "enableAutoCreateTopic": true,
+                        "historyCount": 1
+                    },
+                    "model": "llama3.1:8b",
+                    "params": {
+                        "frequency_penalty": 0,
+                        "presence_penalty": 0,
+                        "temperature": 0.6,
+                        "top_p": 1
+                    },
+                    "plugins": [],
+                    "provider": "ollama",
+                    "systemRole": "",
+                    "tts": {
+                        "showAllLocaleVoice": false,
+                        "sttLocale": "auto",
+                        "ttsService": "openai",
+                        "voice": {
+                            "openai": "alloy"
+                        }
+                    }
+                },
+                "meta": {}
+            },
+            "general": {
+                "fontSize": 14,
+                "language": "auto",
+                "themeMode": "auto"
+            },
+            "keyVaults": {
+                "ollama": {
+                    "baseURL": "http://172.17.0.1:11434"
+                },
+                "password": "lobe666"
+            },
+            "languageModel": {
+                "ai360": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "360gpt-pro",
+                        "360gpt-turbo",
+                        "360gpt-turbo-responsibility-8k"
+                    ]
+                },
+                "anthropic": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "claude-3-5-sonnet-20240620",
+                        "claude-3-sonnet-20240229",
+                        "claude-3-opus-20240229",
+                        "claude-3-haiku-20240307"
+                    ]
+                },
+                "azure": {
+                    "enabled": false
+                },
+                "baichuan": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "Baichuan4",
+                        "Baichuan3-Turbo",
+                        "Baichuan3-Turbo-128k",
+                        "Baichuan2-Turbo",
+                        "Baichuan2-Turbo-192k"
+                    ]
+                },
+                "bedrock": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "ai21.j2-mid-v1",
+                        "ai21.j2-ultra-v1",
+                        "anthropic.claude-3-opus-20240229-v1:0",
+                        "anthropic.claude-3-sonnet-20240229-v1:0",
+                        "anthropic.claude-3-5-sonnet-20240620-v1:0",
+                        "anthropic.claude-3-haiku-20240307-v1:0",
+                        "meta.llama2-13b-chat-v1",
+                        "meta.llama2-70b-chat-v1"
+                    ]
+                },
+                "deepseek": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "deepseek-chat",
+                        "deepseek-coder"
+                    ]
+                },
+                "google": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "gemini-1.5-flash-latest",
+                        "gemini-1.5-pro-latest"
+                    ]
+                },
+                "groq": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "llama-3.1-70b-versatile",
+                        "llama-3.1-8b-instant",
+                        "llama3-groq-70b-8192-tool-use-preview",
+                        "llama3-groq-8b-8192-tool-use-preview",
+                        "llama3-70b-8192",
+                        "mixtral-8x7b-32768",
+                        "gemma2-9b-it",
+                        "llama3-8b-8192"
+                    ]
+                },
+                "minimax": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "abab6.5s-chat",
+                        "abab6.5-chat",
+                        "abab6-chat",
+                        "abab5.5-chat",
+                        "abab5.5s-chat"
+                    ]
+                },
+                "mistral": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "open-mistral-7b",
+                        "open-mixtral-8x7b",
+                        "open-mixtral-8x22b",
+                        "mistral-small-latest",
+                        "mistral-medium-latest",
+                        "mistral-large-latest"
+                    ]
+                },
+                "moonshot": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "moonshot-v1-8k",
+                        "moonshot-v1-32k",
+                        "moonshot-v1-128k"
+                    ]
+                },
+                "novita": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "meta-llama/llama-3-8b-instruct",
+                        "meta-llama/llama-3-70b-instruct",
+                        "nousresearch/hermes-2-pro-llama-3-8b",
+                        "nousresearch/nous-hermes-llama2-13b",
+                        "mistralai/mistral-7b-instruct",
+                        "cognitivecomputations/dolphin-mixtral-8x22b",
+                        "sao10k/l3-70b-euryale-v2.1",
+                        "sophosympatheia/midnight-rose-70b",
+                        "gryphe/mythomax-l2-13b",
+                        "Nous-Hermes-2-Mixtral-8x7B-DPO",
+                        "lzlv_70b",
+                        "teknium/openhermes-2.5-mistral-7b",
+                        "microsoft/wizardlm-2-8x22b"
+                    ]
+                },
+                "ollama": {
+                    "enabled": true,
+                    "enabledModels": [
+                        "phi3",
+                        "qwen2",
+                        "command-r",
+                        "gemma2",
+                        "deepseek-v2",
+                        "deepseek-coder-v2",
+                        "mixtral",
+                        "llama3.1:8b"
+                    ],
+                    "fetchOnClient": false,
+                    "customModelCards": [
+                        {
+                            "id": "llama3.1:8b",
+                            "displayName": "llama3.1:8B",
+                            "tokens": 128000,
+                            "functionCall": true
+                        }
+                    ]
+                },
+                "openai": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "gpt-4o-mini",
+                        "gpt-4o",
+                        "gpt-4-turbo"
+                    ]
+                },
+                "openrouter": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "openrouter/auto",
+                        "mistralai/mistral-7b-instruct:free",
+                        "google/gemma-7b-it:free",
+                        "openchat/openchat-7b:free",
+                        "nousresearch/nous-capybara-7b:free",
+                        "huggingfaceh4/zephyr-7b-beta:free",
+                        "gryphe/mythomist-7b:free",
+                        "undi95/toppy-m-7b:free",
+                        "openrouter/cinematika-7b:free",
+                        "rwkv/rwkv-5-world-3b",
+                        "recursal/rwkv-5-3b-ai-town",
+                        "recursal/eagle-7b",
+                        "mistralai/mixtral-8x22b",
+                        "microsoft/wizardlm-2-8x22b"
+                    ]
+                },
+                "perplexity": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "llama-3-sonar-large-32k-chat",
+                        "llama-3-sonar-large-32k-online"
+                    ]
+                },
+                "qwen": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "qwen-turbo",
+                        "qwen-plus",
+                        "qwen-max",
+                        "qwen-vl-plus",
+                        "qwen-vl-max"
+                    ]
+                },
+                "stepfun": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "step-1-256k",
+                        "step-1-128k",
+                        "step-1-32k",
+                        "step-1v-32k"
+                    ]
+                },
+                "taichu": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "taichu_llm"
+                    ]
+                },
+                "togetherai": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "deepseek-ai/deepseek-coder-33b-instruct",
+                        "Phind/Phind-CodeLlama-34B-v2",
+                        "google/gemma-2b-it",
+                        "meta-llama/Llama-2-13b-chat-hf",
+                        "zero-one-ai/Yi-34B-Chat",
+                        "mistralai/Mixtral-8x7B-Instruct-v0.1",
+                        "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+                        "NousResearch/Nous-Hermes-2-Yi-34B",
+                        "Qwen/Qwen1.5-7B-Chat",
+                        "Qwen/Qwen1.5-32B-Chat",
+                        "Qwen/Qwen1.5-72B-Chat"
+                    ]
+                },
+                "zeroone": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "yi-large",
+                        "yi-large-fc",
+                        "yi-medium",
+                        "yi-vision",
+                        "yi-medium-200k",
+                        "yi-spark",
+                        "yi-large-turbo",
+                        "yi-large-preview"
+                    ]
+                },
+                "zhipu": {
+                    "enabled": false,
+                    "enabledModels": [
+                        "glm-4-alltools",
+                        "glm-4-0520",
+                        "glm-4-air",
+                        "glm-4v",
+                        "codegeex-4"
+                    ]
+                }
+            },
+            "sync": {
+                "webrtc": {
+                    "enabled": false
+                }
+            },
+            "systemAgent": {
+                "agentMeta": {
+                    "model": "qwen2",
+                    "provider": "ollama"
+                },
+                "topic": {
+                    "model": "qwen2",
+                    "provider": "ollama"
+                },
+                "translation": {
+                    "model": "qwen2",
+                    "provider": "ollama"
+                }
+            },
+            "tool": {
+                "dalle": {
+                    "autoGenerate": false
+                }
+            },
+            "tts": {
+                "openAI": {
+                    "sttModel": "whisper-1",
+                    "ttsModel": "tts-1"
+                },
+                "sttAutoStop": true,
+                "sttServer": "openai"
+            }
+        },
+        "topics": [
+            {
+                "title": "默认话题",
+                "favorite": 0,
+                "sessionId": "inbox",
+                "createdAt": 1722228073690,
+                "id": "vAO04Zhz",
+                "updatedAt": 1722228073690
+            }
+        ]
+    },
+    "version": 7
+}
