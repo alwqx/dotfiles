@@ -49,3 +49,19 @@ lg:
 redshift:
 	@echo "redshift config location is Shanghai(lat=31.23 lon=121.47) you can config it"
 	ln $(LNOPT) $(CURDIR)/redshift/redshift.conf ~/.config/redshift/redshift.conf
+
+mac:
+	brew install --cask visual-studio-code
+	brew install --cask orbstack
+	brew install autojump
+	brew install docker
+
+brew:
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+macpy:
+	brew install pyenv
+	pyenv install 3.10.6
+	pyenv global 3.10.6
+	pyenv root
+	pyenv versions
