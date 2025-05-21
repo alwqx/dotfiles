@@ -55,6 +55,8 @@ mac:
 	brew install --cask orbstack
 	brew install autojump
 	brew install docker
+	brew install wget
+	brew install --cask bruno
 
 brew:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
