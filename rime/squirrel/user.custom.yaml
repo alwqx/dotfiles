@@ -1,0 +1,6 @@
+var:
+  option:
+    full_shape: false # 半角
+    simplification: true # 简体
+  previously_selected_schema: luna_pinyin # 输入方案为朙月拼音
+  last_build_time: 1681360293
