@@ -3,3 +3,8 @@ patch:
     "/": "、"
   punctuator/half_shape:
     "/": "/"
+
+  # 添加 lua 脚本的 translator
+  engine/translators/+:
+    - lua_translator@date_translator
+    - lua_translator@time_translator
